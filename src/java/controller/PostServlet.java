@@ -58,7 +58,7 @@ public class PostServlet extends HttpServlet {
         Part part = request.getPart("postfile");
         
         String fileName = extractFileName(part);
-        String savePath = "C:\\Users\\User\\Documents\\NetBeansProjects\\Example\\web\\PostImages" + File.separator + fileName;
+        String savePath = "C:\\Users\\Han\\Downloads\\Example\\web\\PostImages" + File.separator + fileName;
         File fileSave = new File(savePath);
         part.write(savePath + File.separator);
         System.out.println("haha");

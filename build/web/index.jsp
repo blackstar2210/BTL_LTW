@@ -27,10 +27,10 @@
         <% } %>
         
         <% if(user != null){ %>  
+    <center>
         <div>
             <form method="POST" action="PostServlet" enctype="multipart/form-data" id="formpost">
-                <p>Select file to upload:</p>
-                <br>
+                <h2 style="margin-right: 300px;">Select file to upload:</h2>
                 <input type="text" name="postname" id="nameOf" placeholder="Name of Food"/> <br>
                 <input type="text" name="location" placeholder="Location"/> <br>
                 <input type="checkbox" name="category" id="category" onclick="myCheck()" value="1"/> Food/Travelling <br>
@@ -40,6 +40,7 @@
                 <input type="submit" value="Upload" />
             </form>
         </div>
+        </center>
         
         <br><br> 
         

@@ -11,18 +11,27 @@ package model;
  */
 public class User {
     private long userID;
-    private String email, username, password;
+    private String email, username, password,copass;
     private long admin;
 
     public User() {
     }
 
-    public User(long userID, String email, String username, String password, long admin) {
+    public User(long userID, String email, String username, String password,String copass, long admin) {
         this.userID = userID;
         this.email = email;
         this.username = username;
         this.password = password;
+        this.copass = copass;
         this.admin = admin;
+    }
+
+    public String getCopass() {
+        return copass;
+    }
+
+    public void setCopass(String copass) {
+        this.copass = copass;
     }
 
     public long getUserID() {
